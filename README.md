@@ -48,3 +48,6 @@ python3 -m http.server 8000
 Откройте `http://localhost:8000/`.
 
 SVG-иллюстрации можно пересоздать скриптом `generate_art.py` (Python 3, без внешних зависимостей).
+
+## Mobile design refresh
+Replaced platform-dependent colorful emoji arrows and decorative green asterisk with accessible inline vector icons; refined header, filters, product cards and checkout on mobile widths.
