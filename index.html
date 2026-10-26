@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+ <meta name="theme-color" content="#faf6f1"/>
+ <meta name="description" content="Концепт онлайн-витрины Ainalaiyn Flowers в Астане. Выбор букетов, оформление доставки и заявки через WhatsApp."/>
+ <meta property="og:title" content="Ainalaiyn Flowers — цветы для важных моментов (демо)"/>
+ <meta property="og:description" content="Независимый неофициальный прототип. Ассортимент и цены для демонстрации."/>
+ <title>Ainalaiyn Flowers — цветы с теплом · концепт</title>
+ <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"/>
+ <link rel="preconnect" href="https://fonts.googleapis.com"/>
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"/>
+ <link rel="stylesheet" href="./style.css"/>
+ <script src="./app.js" defer></script>
+</head>
+<body>
+ <div class="demo-note"><span class="pulse"></span> НЕОФИЦИАЛЬНЫЙ ПРОТОТИП <span class="dot-sep">✧</span> Цены и изображения — демонстрационные</div>
+ <header class="site-header">
+  <div class="shell topbar">
+   <a href="#top" class="brand" id="brandGo" aria-label="Ainalaiyn Flowers, на главную"><span class="brand-symbol">✿</span><span class="brand-copy"><strong>ainalaiyn</strong><small>flowers · astana</small></span></a>
+   <nav class="primary-nav" aria-label="Навигация"><a href="#collection" id="navCollection">Коллекция</a><a href="#steps" id="navHow">Как заказать</a><a href="https://www.instagram.com/ainalaiyn__flowers/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav>
+   <div class="head-actions"><button type="button" class="header-admin" id="openAdmin">Кабинет флориста</button><button class="cart-btn" type="button" id="openCart" aria-label="Открыть корзину"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6 8h12l1 12H5L6 8ZM9 9V6a3 3 0 0 1 6 0v3"/></svg><span id="cartCounter">0</span></button></div>
+  </div>
+ </header>
+ <main id="storefront">
+  <section class="hero shell" id="top">
+   <div class="hero-left">
+    <div class="eyebrow"><span class="eyebrow-line"></span> Цветы, которые говорят за тебя</div>
+    <h1>Цветы — это<br>маленький способ<br><em>сказать главное.</em></h1>
+    <p>Для поводов и без повода. Нежные букеты, созданные с вниманием к каждой детали.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#collection">Выбрать букет <span>↗</span></a><a class="underlined" href="#steps">Как это работает</a></div>
+    <div class="hero-footer"><span>✧ С любовью к деталям</span><span>♡ Доставка по Астане — по согласованию</span></div>
+    <span class="hero-side-note">A little bloom for a big feeling</span>
+   </div>
+   <div class="hero-right"><div class="hero-arch"><img src="./assets/rose-dream.svg" alt="Декоративная иллюстрация цветочного букета"/></div><span class="hero-stamp">just because<br>is a beautiful<br>reason ♡</span><span class="hero-vertical">AINALAIYN FLOWERS · CONCEPT</span></div>
+  </section>
+  <section class="features shell"><div><span>01</span><strong>Готовые букеты</strong><small>Выбирайте из коллекции</small></div><div><span>02</span><strong>Соберём для вас</strong><small>Любимый оттенок и бюджет</small></div><div><span>03</span><strong>Доставка с заботой</strong><small>Уточним удобное время</small></div></section>
+  <section class="collection shell" id="collection">
+   <div class="section-heading"><div><div class="eyebrow">Наши цветочные истории</div><h2>Коллекция <em>нежности</em></h2><p>Вдохновляющие примеры. Актуальное наличие и цену уточняет флорист.</p></div><div class="heading-deco">✳</div></div>
+   <div class="catalog-controls"><div class="filter-row" role="group" aria-label="Фильтр каталога"><button class="chip active" data-filter="all">Все букеты</button><button class="chip" data-filter="ready">Готовые сегодня</button><button class="chip" data-filter="custom">Под заказ</button></div><label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15 15 5 5"/></svg><input id="searchProducts" type="search" placeholder="Найти букет..." aria-label="Поиск букетов"/></label></div>
+   <div id="products" class="product-grid" aria-live="polite"></div>
+   <div class="bespoke"><div class="bespoke-icon">✿</div><div><small>НЕ НАШЛИ СВОЙ БУКЕТ?</small><h3>Давайте придумаем его вместе</h3><p>Поделитесь любимыми цветами, оттенками и бюджетом. Флорист поможет подобрать композицию.</p></div><button class="btn btn-outline" type="button" id="customBouquet">Оставить пожелание ↗</button></div>
+  </section>
+  <section class="how" id="steps"><div class="shell how-inner"><div class="how-intro"><div class="eyebrow light">Маленькая магия в три шага</div><h2>Дарить цветы —<br><em>очень просто</em></h2><p>Никаких длинных переписок с вопросами о каждом букете.</p></div><div class="how-grid"><div><span class="how-number">01</span><h3>Выберите букет</h3><p>Посмотрите примеры и положите понравившийся в корзину.</p></div><div><span class="how-number">02</span><h3>Укажите детали</h3><p>Дата, доставка, открытка и номер для счёта Kaspi.</p></div><div><span class="how-number">03</span><h3>Подтвердите в WhatsApp</h3><p>Откроется подготовленная заявка. Флорист уточнит всё перед оплатой.</p></div></div></div></section>
+  <section class="bottom-cta shell"><div class="cta-flower">❁</div><div><div class="eyebrow">Ainalaiyn · с заботой</div><h2>Важны не поводы.<br><em>Важны чувства.</em></h2><p>Выбирайте цветы, а детали доставки мы согласуем вместе.</p></div><a href="#collection" class="btn btn-primary">Посмотреть коллекцию ↗</a></section>
+ </main>
+ <section id="admin" class="admin hidden" aria-label="Демонстрационный кабинет флориста">
+  <div class="shell admin-shell"><div class="admin-title"><div><div class="eyebrow">Ainalaiyn / Studio</div><h1>Кабинет <em>флориста</em></h1><p>Демо без авторизации и общей базы данных. Изменения видны только в этом браузере.</p></div><button type="button" class="btn btn-outline" id="backStore">↖ Витрина покупателя</button></div>
+  <div class="admin-tabbar"><button class="admin-tab active" data-admin-tab="overview">Обзор</button><button class="admin-tab" data-admin-tab="catalog">Каталог</button><button class="admin-tab" data-admin-tab="orders">Заявки</button><button class="admin-tab" data-admin-tab="settings">Настройки</button></div>
+  <div id="adminPanel" aria-live="polite"></div></div>
+ </section>
+ <footer><div class="shell footer-inner"><div><div class="footer-logo">ainalaiyn <span>✿</span></div><p>Демонстрационный проект цветочной онлайн-витрины.<br>Неофициальный сайт. Примерные цены и иллюстрации.</p></div><div class="footer-right"><a href="https://www.instagram.com/ainalaiyn__flowers/" rel="noopener noreferrer" target="_blank">Instagram ↗</a><a href="#top">Наверх ↑</a></div></div></footer>
+ <div id="cartDock" class="cart-dock hidden"><span><strong id="cartTotal">0 ₸</strong><small id="cartDetail">Букетов: 0</small></span><button class="btn btn-primary" type="button" id="cartDockBtn">Оформить ↗</button></div>
+ <div class="modal-layer hidden" id="modal" aria-hidden="true"><button class="modal-backdrop" type="button" id="modalBackdrop" aria-label="Закрыть окно"></button><section class="drawer" role="dialog" aria-modal="true" aria-labelledby="dialogHeading"><div class="drawer-heading"><div><div class="eyebrow">Ainalaiyn Flowers</div><h2 id="dialogHeading">Ваш выбор</h2></div><button class="close-modal" type="button" id="closeModal" aria-label="Закрыть">×</button></div><div id="modalContent" class="drawer-body"></div></section></div>
+ <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+</body>
+</html>
